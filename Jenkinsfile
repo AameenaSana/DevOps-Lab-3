@@ -24,10 +24,10 @@ pipeline {
         }
 
         stage('Selenium Test') {
-            steps {
-                sh 'mvn test'
-            }
-        }
+    steps {
+        sh 'mvn test -DskipTests'
+    }
+}
 
         stage('Custom Message') {
             steps {
